@@ -1,0 +1,124 @@
+*{
+    font-family: "Poppins", Sans-serif;
+}
+
+/* Headings */
+h1 {
+  background: linear-gradient(360deg, #234eb0 5%, #9010b0 100%);
+  background-clip: text;
+  font-weight: 700;
+  font-size: 55px;
+  -webkit-text-fill-color: transparent;
+  margin-top: 10px;
+}
+h2 {
+  background: linear-gradient(90deg, #234eb0 3.66%, #9010b0 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: -20px;
+}
+h4 {
+    background: linear-gradient(90deg, #234eb0 3.66%, #9010b0 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+/* Header Section */
+#headerDiv {
+  text-align: center;
+  margin: 15px 4vw;
+}
+#headerDiv img {
+  width: 100px;
+}
+
+/* Unniversity Section */
+#universityDiv {
+  margin: 50px 3.5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#universityCard {
+  width: 248px;
+  font-size: 20px;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-image: linear-gradient(to right, #234eb0 3.66%, #9010b0 100%) 1;
+  border-width: 0.5px 6px 4px 0.5px;
+  box-shadow: -1px 10px 20px 0px rgba(65, 45, 45, 0.561);
+  margin: 30px 20px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+#universityCard:hover {
+  box-shadow: -1px 10px 20px 0px rgba(0, 0, 0, 0.561);
+  transform: translateY(-20px);
+}
+
+/* Mentors and advisors section */
+#mentorsDiv {
+  text-align: center;
+  margin: 50px 3.5vw;
+}
+#mentorsCardDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#mentorsCard {
+  text-align: center;
+  width: 240px;
+  margin: 30px 20px;
+  box-sizing: border-box;
+}
+#mentorsCard img {
+  border-radius: 50%;
+  width: 120px;
+}
+#mentorsCard button {
+  padding: 11px 25px;
+  cursor: pointer;
+  border-style: solid;
+  border-image: linear-gradient(to right, #234eb0 3.66%, #9010b0 100%) 1;
+  border-width: 1px;
+  border-radius: 25px;
+  background: linear-gradient(90.23deg, #234EB0 2.75%, #B656E2 104.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (max-width: 619px) {
+  #universityDiv {
+    margin: 50px 10px;
+  }
+  #mentorsDiv {
+    margin: 50px 10px;
+  }
+}
+@media (max-width: 595px) {
+  #universityCard {
+    width: 210px;
+  }
+  #mentorsCard {
+    width: 210px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 520px) {
+  #universityCard {
+    width: 190px;
+  }
+  #mentorsCard {
+    width: 190px;
+  }
+}
